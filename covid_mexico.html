@@ -1,0 +1,177 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>COVID in Mexico</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Header -->
+		<header id="header">
+			<div class="inner"  style="text-align:center;">
+				<a href="index.html" class="image avatar"><img src="images/avatar.jpg" alt="" /></a>
+				<h1><strong>Project Resources</strong> <br/>
+				<p> </p>
+				<a href="https://github.com/andres9804/covid_mexico_analysis/blob/main/covid_mex_scripts.sql" target="_blank" class="button primary fit small">Code</a>		
+				<p> </p>
+				<a href="https://public.tableau.com/views/CovidMexico_16921808722920/DASCASOS" target="_blank" class="button primary fit small">Visualizations</a>
+			</div>
+		</header>
+
+		<!-- Wrapper -->
+			<div id="main">
+				<!-- Main -->
+					<section id="two">
+						<div class="inner">
+							<p><a href="index.html">&lt;Back</a></p>
+							<h1 class="major">COVID in Mexico</h1>
+							<span><img src="images/projects/covid_mexico/01.gif" alt="" />
+							<p>Project created to explore and visualize data related to COVID cases, deaths and vaccines in Mexico.</p>
+							<p>Data regarding vaccines was obtained from <a href="https://ourworldindata.org/covid-vaccinations" target="_blank">Our World in Data</a> and data about cases and defunctions was obtained in <a href= "https://www.gob.mx/salud/documentos/datos-abiertos-152127" target="_blank">Mexico's government site</a>. Mexico's geodata necessary to create some Tableau visualizations was obtained from <a href="https://www.inegi.org.mx/temas/mg/#descargas">INEGI's website.</a></p>
+							<p>After collecting the data from both sites, it was formatted and cleaned using Excel, after formatting it was exported to SQL Server and relations between tables were stablished to use joins later on.</p>
+							<p>After stablishing a small relational database, data was explored using different queries that you can find <a href="https://github.com/andres9804/covid_mexico_analysis/blob/main/covid_mex_scripts.sql" target="_blank">here.</a> With some ideas in mind after some insights were found, views were created to export queries result's to Excel and then to Tableau to visualize those findings.</p>
+							<h2>Key findigs</h2>
+							<div class='tableauPlaceholder' id='viz1693970410967' style='position: relative'>
+								<noscript><a href='#'><img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Co&#47;CovidMexico_16921808722920&#47;CasosporEstado&#47;1_rss.png' style='border: none' /></a></noscript>
+								<object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' />
+								<param name='site_root' value='' /><param name='name' value='CovidMexico_16921808722920&#47;CasosporEstado' />
+								<param name='tabs' value='yes' />
+								<param name='toolbar' value='yes' />
+								<param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Co&#47;CovidMexico_16921808722920&#47;CasosporEstado&#47;1.png' />
+								<param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' />
+								<param name='display_spinner' value='yes' />
+								<param name='display_overlay' value='yes' />
+								<param name='display_count' value='yes' />
+								<param name='language' value='es-ES' /></object>
+							</div>
+							<script type='text/javascript'>                    var divElement = document.getElementById('viz1693970410967');                    var vizElement = divElement.getElementsByTagName('object')[0];                    vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';                    var scriptElement = document.createElement('script');scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';vizElement.parentNode.insertBefore(scriptElement, vizElement);</script>
+							<p></p>
+							<h3>Confirmed cases by Federal Entity</h3>
+							<p><b>Key findings:</b></p>
+							<ul>
+								<li>Entities with the most active cases: <ol><li>Ciudad de México (1.840.159)</li><li>Estado de México (762.720)</li><li>Nuevo León (432.091)</li></ol></li>
+							</ul>
+							<div class='tableauPlaceholder' id='viz1693971154881' style='position: relative'>
+								<noscript><a href='#'><img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Co&#47;CovidMexico_16921808722920&#47;DefuncionesporEstado&#47;1_rss.png' style='border: none' /></a></noscript>
+								<object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+								<param name='embed_code_version' value='3' /> <param name='site_root' value='' />
+								<param name='name' value='CovidMexico_16921808722920&#47;DefuncionesporEstado' />
+								<param name='tabs' value='yes' /><param name='toolbar' value='yes' />
+								<param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Co&#47;CovidMexico_16921808722920&#47;DefuncionesporEstado&#47;1.png' />
+								<param name='animate_transition' value='yes' />
+								<param name='display_static_image' value='yes' />
+								<param name='display_spinner' value='yes' />
+								<param name='display_overlay' value='yes' />
+								<param name='display_count' value='yes' />
+								<param name='language' value='es-ES' /></object>
+							</div>
+							<script type='text/javascript'>                    var divElement = document.getElementById('viz1693971154881');                    var vizElement = divElement.getElementsByTagName('object')[0];                    vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';                    var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+							<p></p>
+							<h3>Confirmed deaths by Federal Entity</h3>
+							<p><b>Key findings:</b></p>
+							<ul>
+								<li>Entities with the most deaths: <ol><li>Estado de México (48.371)</li><li>Ciudad de México (43.300)</li><li>Jalisco (20.221)</li></ol></li>
+							</ul>
+							<div class='tableauPlaceholder' id='viz1693972560781' style='position: relative'>
+								<noscript><a href='#'><img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Co&#47;CovidMexico_16921808722920&#47;Casossemanales&#47;1_rss.png' style='border: none' /></a></noscript>
+								<object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+								<param name='embed_code_version' value='3' />
+								<param name='site_root' value='' />
+								<param name='name' value='CovidMexico_16921808722920&#47;Casossemanales' />
+								<param name='tabs' value='yes' /><param name='toolbar' value='yes' />
+								<param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Co&#47;CovidMexico_16921808722920&#47;Casossemanales&#47;1.png' />
+								<param name='animate_transition' value='yes' />
+								<param name='display_static_image' value='yes' />
+								<param name='display_spinner' value='yes' />
+								<param name='display_overlay' value='yes' />
+								<param name='display_count' value='yes' />
+								<param name='language' value='es-ES' /></object>
+							</div>
+							<script type='text/javascript'>                    var divElement = document.getElementById('viz1693972560781');                    var vizElement = divElement.getElementsByTagName('object')[0];                    vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';                    var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+							<p></p>
+							<h3>Confirmed cases by week</h3>
+							<p><b>Key findings:</b></p>
+							<ul>
+								<li>Accumulated cases until August 08, 2023: 7.655.385</li>
+								<li>Week with highest peak of confirmed cases: January 09, 2022 (235.116)</li>
+							</ul>
+							<div class='tableauPlaceholder' id='viz1693974253087' style='position: relative'>
+								<noscript><a href='#'><img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Co&#47;CovidMexico_16921808722920&#47;Defuncionessemanales&#47;1_rss.png' style='border: none' /></a></noscript>
+								<object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+									<param name='embed_code_version' value='3' />
+									<param name='site_root' value='' /><param name='name' value='CovidMexico_16921808722920&#47;Defuncionessemanales' />
+									<param name='tabs' value='yes' />
+									<param name='toolbar' value='yes' />
+									<param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Co&#47;CovidMexico_16921808722920&#47;Defuncionessemanales&#47;1.png' />
+									<param name='animate_transition' value='yes' />
+									<param name='display_static_image' value='yes' />
+									<param name='display_spinner' value='yes' />
+									<param name='display_overlay' value='yes' />
+									<param name='display_count' value='yes' />
+									<param name='language' value='es-ES' /></object>
+								</div>
+								<script type='text/javascript'>                    var divElement = document.getElementById('viz1693974253087');                    var vizElement = divElement.getElementsByTagName('object')[0];                    vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';                    var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>				
+								<p></p>
+								<h3>Confirmed deaths by week</h3>
+								<p><b>Key findings:</b></p>
+							<ul>
+								<li>Accumulated deaths until August 08, 2023: 334.513</li>
+								<li>Week with highest peak of deaths: January 17, 2021 (9.937)</li>
+							</ul>
+							<div class='tableauPlaceholder' id='viz1693975177760' style='position: relative'>
+								<noscript><a href='#'><img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Co&#47;CovidMexico_16921808722920&#47;EfectosDEF&#47;1_rss.png' style='border: none' /></a></noscript>
+								<object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+									<param name='embed_code_version' value='3' /> <param name='site_root' value='' />
+									<param name='name' value='CovidMexico_16921808722920&#47;EfectosDEF' />
+									<param name='tabs' value='yes' /><param name='toolbar' value='yes' />
+									<param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Co&#47;CovidMexico_16921808722920&#47;EfectosDEF&#47;1.png' />
+									<param name='animate_transition' value='yes' />
+									<param name='display_static_image' value='yes' />
+									<param name='display_spinner' value='yes' />
+									<param name='display_overlay' value='yes' />
+									<param name='display_count' value='yes' />
+									<param name='language' value='es-ES' /></object>
+								</div>
+								<script type='text/javascript'>                    var divElement = document.getElementById('viz1693975177760');                    var vizElement = divElement.getElementsByTagName('object')[0];                    vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';                    var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>							
+								<p></p>
+								<h3>Vaccines effects on deaths</h3>
+								<p><b>Key findings:</b></p>
+							<ul>
+								<li>There was a drastic reduction on deaths after vaccinations campaigns started. Death rate went lowering from 9.59% to 2.76% when vaccinations campagins started.</li>
+								<li>Until October,2022, there were 97.179.493 with at least one dose of the vaccines. That's about 76% of Mexico's total population. </li>
+							</ul>
+							<h2>General conclusions on data</h2>
+							<ul>
+								<li>Ciudad de México and Estado de México were the most affected entities by COVID.</li>
+								<li>There was 7.655.385 total cases and 334.513 total deaths until the last data consult (August 08, 2023). </li>
+								<li>Even though vaccines didn't stop new waves of infection, death rate went lowering from 9.59% to 2.76%, which confirms the efectiveness of vaccination campaigns.</li>
+							</ul>
+						</div>
+					</section>
+
+			</div>
+
+		<!-- Footer -->
+		<footer id="footer">
+			<div class="inner"  style="text-align:center;">
+				<ul class="icons">
+					<li><a href="https://www.linkedin.com/in/alang9804/" class="icon brands fa-linkedin"><span class="label">Github</span></a></li>
+					<li><a href="https://github.com/andres9804" class="icon brands fa-github"><span class="label">Github</span></a></li>
+					<li><a href="mailto:alangonzalez9804@gmail.com" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
+				</ul>
+			</div>
+		</footer>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.poptrox.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>

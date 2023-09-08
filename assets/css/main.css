@@ -73,6 +73,19 @@ input, select, textarea {
 }
 
 /* Basic */
+	html, body {
+		height: 100%;
+		margin: 0;
+		padding: 0;
+	}
+
+	img {
+		padding: 0;
+		display: block;
+		margin: 0 auto;
+		max-height: 100%;
+		max-width: 100%;
+	}
 
 	html {
 		box-sizing: border-box;
@@ -111,13 +124,13 @@ input, select, textarea {
 		-ms-transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out;
 		transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out;
 		border-bottom: dotted 1px;
-		color: #49bf9d;
+		color: #154360;
 		text-decoration: none;
 	}
 
 		a:hover {
 			border-bottom-color: transparent;
-			color: #49bf9d !important;
+			color: #154360 !important;
 			text-decoration: none;
 		}
 
@@ -1841,7 +1854,7 @@ input, select, textarea {
 		input[type="email"]:focus,
 		select:focus,
 		textarea:focus {
-			border-color: #49bf9d;
+			border-color: #154360;
 		}
 
 	select {
@@ -1946,7 +1959,7 @@ input, select, textarea {
 
 		input[type="checkbox"]:focus + label:before,
 		input[type="radio"]:focus + label:before {
-			border-color: #49bf9d;
+			border-color: #154360;
 		}
 
 	input[type="checkbox"] + label:before {
@@ -2464,8 +2477,8 @@ input, select, textarea {
 		input[type="reset"]:hover,
 		input[type="button"]:hover,
 		.button:hover {
-			border-color: #49bf9d;
-			color: #49bf9d !important;
+			border-color: #154360;
+			color: #154360 !important;
 		}
 
 		input[type="submit"]:active,
@@ -2473,8 +2486,8 @@ input, select, textarea {
 		input[type="button"]:active,
 		.button:active {
 			background-color: rgba(73, 191, 157, 0.1);
-			border-color: #49bf9d;
-			color: #49bf9d !important;
+			border-color: #154360;
+			color: #154360 !important;
 		}
 
 		input[type="submit"].icon,
@@ -2517,8 +2530,8 @@ input, select, textarea {
 		input[type="reset"].primary,
 		input[type="button"].primary,
 		.button.primary {
-			background-color: #49bf9d;
-			border-color: #49bf9d;
+			background-color: #154360;
+			border-color: #154360;
 			color: #ffffff !important;
 		}
 
@@ -2526,16 +2539,16 @@ input, select, textarea {
 			input[type="reset"].primary:hover,
 			input[type="button"].primary:hover,
 			.button.primary:hover {
-				background-color: #5cc6a7;
-				border-color: #5cc6a7;
+				background-color: #1A5276;
+				border-color: #1A5276;
 			}
 
 			input[type="submit"].primary:active,
 			input[type="reset"].primary:active,
 			input[type="button"].primary:active,
 			.button.primary:active {
-				background-color: #3eb08f;
-				border-color: #3eb08f;
+				background-color: #154360;
+				border-color: #154360;
 			}
 
 		input[type="submit"].disabled, input[type="submit"]:disabled,
@@ -2827,21 +2840,7 @@ input, select, textarea {
 		}
 
 		.poptrox-popup .nav-next,
-		.poptrox-popup .nav-previous {
-			text-decoration: none;
-			-moz-transition: opacity 0.2s ease-in-out;
-			-webkit-transition: opacity 0.2s ease-in-out;
-			-ms-transition: opacity 0.2s ease-in-out;
-			transition: opacity 0.2s ease-in-out;
-			-webkit-tap-highlight-color: rgba(255, 255, 255, 0);
-			background: rgba(0, 0, 0, 0.01);
-			cursor: pointer;
-			height: 100%;
-			opacity: 0;
-			position: absolute;
-			top: 0;
-			width: 50%;
-		}
+
 
 			.poptrox-popup .nav-next:before,
 			.poptrox-popup .nav-previous:before {
